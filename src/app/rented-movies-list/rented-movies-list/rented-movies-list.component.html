@@ -1,0 +1,22 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Customer ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Rented Movie Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rentedMovie of rentedMoviesList">
+            <td>{{ rentedMovie.custid }}</td>
+            <td>{{ rentedMovie.fname }}</td>
+            <td>{{ rentedMovie.lname }}</td>
+            <td>{{ rentedMovie.rentedmoviename }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
